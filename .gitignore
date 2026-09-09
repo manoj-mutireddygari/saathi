@@ -6,6 +6,16 @@
 .env.local
 *.env
 
+# SQLite Database (runtime data)
+saathi.db
+saathi.db-journal
+saathi.db-wal
+saathi.db-shm
+
+# Voice recordings
+recordings/*
+!recordings/.gitkeep
+
 # Operating System Files
 .DS_Store
 .DS_Store?
