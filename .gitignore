@@ -1,0 +1,30 @@
+# Compiled Java class files
+*.class
+
+# Environment and sensitive keys
+.env
+.env.local
+*.env
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor files
+.idea/
+*.iml
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Build and Temp folders
+bin/
+build/
+target/
+out/
+*.log
