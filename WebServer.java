@@ -19,7 +19,8 @@ import java.util.*;
  */
 public class WebServer {
 
-    private static final int PORT = 8080;
+    private static final int PORT =
+            Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
 
     public static void main(String[] args) {
         try {
@@ -28,7 +29,7 @@ public class WebServer {
             Main.loadSampleData();
             Main.loadData();
 
-            HttpServer server = HttpServer.create(new InetSocketAddress(PORT), 0);
+            HttpServer server = HttpServer.create(new InetSocketAddress("0.0.0.0", PORT), 0);
 
             // API Handlers
             server.createContext("/api/beneficiaries", new BeneficiariesHandler());
